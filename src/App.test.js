@@ -7,3 +7,7 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+it('should redirect to register page', () => {
+  expect(window.location.href).toEqual('http://localhost/register')
+})
